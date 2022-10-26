@@ -3,6 +3,7 @@ import Head from 'next/head';
 import '../styles/globals.css';
 
 import Layout from '../components/layout/layout';
+import Notification from '../components/ui/notification';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }) {
         ></meta>
       </Head>
       <Component {...pageProps} />
+      <Notification title='test' message="This is a test" status="pending" />
     </Layout>
   );
 }
